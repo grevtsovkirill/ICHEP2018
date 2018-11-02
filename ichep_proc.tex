@@ -3,6 +3,12 @@
 % filled in. Otherwise please make sure you insert your
 % data according to the instructions in PoSauthmanual.pdf
 \documentclass{PoS}
+\usepackage[hyperref=true]{biblatex}
+%\usepackage{atlasbiblatex}
+\addbibresource{bib/ATLAS.bib}
+\addbibresource{bib/CMS.bib}
+\addbibresource{bib/ConfNotes.bib}
+\addbibresource{bib/PubNotes.bib}
 
 \title{Searches for high-mass resonances decaying to pair of bosons using the ATLAS detector}
 
@@ -17,29 +23,49 @@
 %        E-mail: \email{...}}
 % There is a page limit:
 % 
-%  - Plenary talk: 10 pages, including the title and reference pages.
-%  - Parallel talk: 4 pages for ?20 min, 6 pages for >20 min?, including the title and reference 
-%                       pages.
-%  - Posters: 2 pages, including the title and reference pages.
-% 
-%  The submission deadline is expected to be October 15 (Mon), 2018.
-%  
-\abstract{Several theories beyond the Standard Model predict the existence of new heavy particles decaying into pairs of gauge bosons. In this presentation the latest ATLAS results on searches for resonances decaying into pairs of W or Z bosons or photons, or into a Z boson and a photon, based on 36 fb-1 of pp collision data collected at 13 TeV will be discussed.
+%  - Parallel talk: 4 pages for <20 min, including the title and reference 
+
+\abstract{Several theories beyond the Standard Model predict the existence of new heavy particles decaying into pairs of gauge bosons. In this proceedings the latest ATLAS results on searches for resonances decaying into pairs of $W$ or $Z$ bosons or photon  based on datasets of 36  and 80 fb$^{-1}$ of $pp$ collision data collected at 13 TeV will be discussed.
 }
 
 \FullConference{ICHEP 2018, International Conference on High Energy Physics\\
 		4-11 July 2018\\
 		Seoul, South Korea}
 
+
+
 \begin{document}
 
 \section{Introduction}
-\section{}
 
-\begin{thebibliography}{99}
-\bibitem{...}
-....
+The discovery of a Higgs-like particle announced by the ATLAS and CMS Collaborations in 2012 \cite{HIGG-2012-27} has been an important milestone in the understanding of the mechanism of electroweak (EW) symmetry breaking. %[3-5].
+%3. F. Englert, R. Brout, Broken symmetry and the mass of gauge vector mesons. Phys. Rev. Lett. 13, 321 (1964). https://doi.org/10.1103/ PhysRevLett.13.321
+%4. P.W. Higgs, Broken symmetries and the masses of gauge bosons. Phys. Rev. Lett. 13, 508 (1964). https://doi.org/10.1103/ PhysRevLett.13.508
+%5. G.S. Guralnik, C.R. Hagen, T.W.B. Kibble, Global conservation laws and massless particles. Phys. Rev. Lett. 13, 585 (1964). https:// doi.org/10.1103/PhysRevLett.13.585
+Next step is to figure out whether this particle is the only one or if it is part of an extended Higgs sector as predicted by several extensions of the Standard Model (SM): composite Higgs models, heavy vector triplets and models with warped extra dimensions
+%Diboson vector and tensor resonances are also predicted in several other extensions to the SM, such as in composite Higgs mod- els [9, 10] and models with warped extra dimensions [11?14].
 
-\end{thebibliography}
+
+In these proceedings a collection of different results is presented.
+A search for additional heavy resonances in diboson final states presented for several channels: leptonic decays of $W$ and $Z$ bosons pairs described in Section~\ref{sec:WW} and \ref{sec:ZZ} for 36fb$^{-1}$; fully hadronic decays of $VV$ described in Section~\ref{sec:VV} using 80 fb$^{-1}$ dataset; photon and hadronicaly decaying $Z,W$ or $H$ bosons .
+\section{$WW\rightarrow e\nu \mu \nu$ decays}
+\label{sec:WW}
+
+\section{$ZZ\rightarrow \ell^+\ell^-\ell^+\ell^-$ and $\ell^+\ell^-\nu\bar{\nu}$ decays} %l+l?l+l?
+\label{sec:ZZ}
+
+%\section{Hadronic decays of $WW, WZ$ or $ZZ$ boson pairs}
+\section{$VV\rightarrow qqqq$}
+\label{sec:VV}
+
+%\section{Resonances decaying to a $Z$, $W$, or Higgs boson and a photon}
+\section{$Z/W/H+\gamma$ hadronic dacays}
+\label{sec:gV}
+
+\printbibliography
+%\begin{thebibliography}{99}
+%\bibitem{}
+%
+%\end{thebibliography}
 
 \end{document}
