@@ -4,7 +4,7 @@
 % data according to the instructions in PoSauthmanual.pdf
 
 \documentclass{PoS}
-
+\usepackage{verbatim}
 \usepackage{lineno}
 
           
@@ -35,7 +35,7 @@ No excess of events is found over the Standard Model background-only expectation
 
 
 \begin{document}
-%\linenumbers
+\linenumbers
 
 \vspace*{-10mm}
 \section{Introduction}
@@ -51,12 +51,13 @@ The next step is to figure out whether this particle is the only one or if it is
 In these proceedings a collection of results is presented where the heavy resonances decay into diboson final states. 
 The analyses are separated according to the diboson composition ($W,Z, \gamma$) and the decays of the bosons. 
 %A search for additional heavy resonances in diboson final states is presented for several channels.
-Searches for heavy resonances decaying to $WW$ and $ZZ$ with leptonic decays of $W$ and $Z$ bosons are described in Section~\ref{sec:WW} and \ref{sec:ZZ} using 36 fb$^{-1}$ of data.
+%Searches for heavy resonances decaying to $WW$ and $ZZ$ with leptonic decays of $W$ and $Z$ bosons are described in Section~\ref{sec:WW} and \ref{sec:ZZ} using 36 fb$^{-1}$ of data.
+Searches for heavy resonances decaying to $WW$ with leptonic decays of $W$ bosons are described in Section~\ref{sec:WW} using 36 fb$^{-1}$ of data.
 A search for fully hadronic decays of $VV$ ($WW, WZ, ZZ$) is described in Section~\ref{sec:VV} using 80 fb$^{-1}$ of data, results of a search for a photon and a hadronically decaying boson ($Z,W$ or $H$) are presented in Section~\ref{sec:gV} based on a dataset corresponding to an integrated luminosity of 36 fb$^{-1}$. 
 The brief overview of searches are summarised in Section~\ref{sec:sum}.
 
 %\newpage
-\vspace*{-2mm}
+\vspace*{-4mm}
 \section{$WW\rightarrow e\nu \mu \nu$ decays}
 \label{sec:WW}
 \vspace*{-2mm}
@@ -64,7 +65,7 @@ The search for a neutral heavy resonance $H$ decaying to $WW$ with a final state
 The search is performed for the production via quark-antiquark annihilation ($q\bar{q}A$), vector-boson fusion (VBF) or gluon-gluon fusion ($ggF$) process covering a mass range from 200 GeV up to 5 TeV for various benchmark models: a Higgs-like scalar in narrow (N) or large (L) width approximation scenarios
 % (NWA-LWA, $\Gamma_X$=0-15\%$m_X$), 
 \footnote{
-The LWA approximation is studied for three hypotheses on the ratio between the resonance width and mass: 1\%, 5\%, and 10\% }
+The LWA approximation is studied for three hypotheses on the ratio between the resonance width and mass: 1\%, 5\%, and 10\%  }
 a two-Higgs-doublet model (2HDM), the Georgi-Machacek (GM) model, a heavy vector triplet model (HVT), a warped extra dimension model predicting  Kaluza-Klein graviton excitations ($G_{KK}$) and an effective Lagrangian model (ELM).
 
 The analysis studies opposite sign, different flavour leptons and categorises events into three signal regions (SR), two VBF enriched and one targeting $ggF$ and $q\bar{q}A$. 
@@ -85,6 +86,7 @@ The current sensitivity is not sufficient to exclude the GM signal with masses b
 Heavy vector triplet signals below about 1.3 TeV are excluded at 95\% CL. 
 The observed limits exclude a KK graviton signal lighter than 1.1 TeV (750 GeV) with the $k/\overline{M}_{Pl}$=1(0.5), while the current sensitivity is not sufficient to exclude the ELM spin-2 VBF signal. 
 
+\begin{comment}
 \vspace*{-3mm}
 \section{$ZZ\rightarrow \ell^+\ell^-\ell^+\ell^-$ and $\ell^+\ell^-\nu\bar{\nu}$ decays} %l+l?l+l?
 \label{sec:ZZ}
@@ -110,9 +112,10 @@ The NWA limits are translated into exclusion limits in the $tan \beta$ versus $c
 The limits on the production rate of a large-width scalar are obtained for $\Gamma_X/m_X$ of 1, 5 and 10\%. % of the mass of the resonance.
 The results are interpreted as a search for a Kaluza-Klein graviton excitation, excluding this signal up to a mass of 1.3 TeV. %, which is consistent to results of the search discussed in Section~\ref{sec:WW}. 
 
+\end{comment}
 
 %\section{Hadronic decays of $WW, WZ$ or $ZZ$ boson pairs}
-\vspace*{-3mm}
+\vspace*{-4mm}
 \section{$VV\rightarrow qqqq$}
 \label{sec:VV}
 \vspace*{-2mm}
@@ -131,9 +134,9 @@ The modelling of the parametric shape tested in a dedicated fit control region i
 A signal-plus-background fit is performed on the discriminant distribution $m_{JJ}$.
 No significant deviation is found, therefore upper limits on the production cross section times branching ratio to diboson final states for new resonances with masses between 1.2 and 5.0 TeV are set at the 95\% CL, excluding the production of $WW+WZ$ from the HVT model A(B), with $g_V$=1(3) and masses in the range of 1.20-3.40(1.20-4.15) TeV. 
 Production of a $G_{KK}$ in the bulk RS model with $k/\overline{M}_{Pl}$=1 is excluded in the range of 1.20-1.90 TeV and 2.1-2.3 TeV, at the 95\% CL.
-\vspace*{-2mm}
 
 %\section{Resonances decaying to a $Z$, $W$, or Higgs boson and a photon}
+\vspace*{-4mm}
 \section{$Z/W/H+\gamma$ hadronic decays}
 \label{sec:gV}
 \vspace*{-2mm}
@@ -148,23 +151,23 @@ The jet-photon mass distribution ($m_{J \gamma}$) are used as a discriminant var
 
 The largest deviation from the SM expectation, corresponding to a significance of 2.7$\sigma$, is found in the $W\gamma$ search at $m_{J \gamma}$=2.5 TeV.
 In the absence of any significant excess, limits are set on hadronic $W$ boson decays.
-The limit varies from about 10 fb at $m_X$=1.0 TeV to 0.1 fb for 6.6 TeV, as shown on the left at Figure~\ref{fig:Wg_lim}. 
+The limit varies from about 10 fb at $m_X$=1.0 TeV to 0.1 fb for 6.6 TeV. %, as shown on the left at Figure~\ref{fig:Wg_lim}. 
 %This is the first search for a heavy resonance in $H\gamma$ with this decay mode.
 The limit on $H\gamma$ production is evaluated for resonance masses between 1 and 3 TeV and varies between 10 fb and 4 fb depending on $m_X$.
 The limits on $Z\gamma$ production, vary from about 10 fb to 0.1 fb, for $m_X$ between 1.0 and 6.8 TeV, for spin-0 and spin-2 hypothesis. % for $ggF$ and $q\bar{q}A$.
-\vspace*{-4mm}
- \begin{figure}
- \hspace{5mm}
-     \includegraphics[width=.4\textwidth]{figures/lim_Wg_qqA1}
- \hspace{10mm}
-      \includegraphics[width=.4\textwidth]{figures/lim_Hg_qqA1}
-      \vspace*{-2mm}
-     \caption{The 95\% CL observed (solid line) and expected (dashed line) upper limits on $\sigma B$ for a spin-1 resonance decaying to $W\gamma$ (left) and $H\gamma$ (right), as a function of the resonance mass~\cite{EXOT-2016-30}.}
-     \label{fig:Wg_lim}
-     \end{figure}
+%\vspace*{-4mm}
+% \begin{figure}
+% \hspace{5mm}
+%     \includegraphics[width=.4\textwidth]{figures/lim_Wg_qqA1}
+% \hspace{10mm}
+%      \includegraphics[width=.4\textwidth]{figures/lim_Hg_qqA1}
+%      \vspace*{-2mm}
+%     \caption{The 95\% CL observed (solid line) and expected (dashed line) upper limits on $\sigma B$ for a spin-1 resonance decaying to $W\gamma$ (left) and $H\gamma$ (right), as a function of the resonance mass~\cite{EXOT-2016-30}.}
+%     \label{fig:Wg_lim}
+%     \end{figure}
 %\vspace*{-10mm}
 
-\vspace*{-2mm}
+\vspace*{-4mm}
 \section{Summary}
 \label{sec:sum}
 \vspace*{-2mm}
@@ -173,10 +176,11 @@ The searches presented in this review used datasets collected in $pp$ collisions
 No excess of events over the SM expectation was found in any of the final states taken into account. 
 Figure~\ref{fig:summary} presents a sketch, combining a variety of upper limits set on the collection of diboson channels, covering various spin hypotheses and a broad mass range from 200 GeV up to 6.8 TeV.
 %The right plot on Figure~\ref{fig:summary} presents total luminosity collected by atlas in Run-2, which shows doubled dataset with respect to studied so far.
-\vspace*{-4mm}
+
   \begin{figure}
     \begin{center} 
-    \includegraphics[width=.53\textwidth]{figures/lim_sketch}
+\vspace*{-6mm}
+    \includegraphics[width=.5\textwidth]{figures/lim_sketch}
     \end{center}
      %\includegraphics[width=.5\textwidth]{figures/intlumivstimeRun2}
      %\caption{Left: combination of limits set on various diboson channels, covering large mass range and spin hypothesis. Right: cumulative luminosity versus time recorded by ATLAS (yellow).}
@@ -185,10 +189,9 @@ Figure~\ref{fig:summary} presents a sketch, combining a variety of upper limits 
      \label{fig:summary}
      \end{figure}
 
-\vspace*{-3mm}
+\vspace*{-6mm}
 %\printbibliography
 \bibliographystyle{JHEP}
-
 %\begin{thebibliography}{99}
 \bibliography{all.bib}
 %\bibliography{bib/CMS.bib}
